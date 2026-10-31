@@ -7148,7 +7148,7 @@ index 00000000..fcf5287b
 diff --git a/launcher/app/src/main/java/com/gathin/tvhome/QuickSettingsActivity.java b/launcher/app/src/main/java/com/gathin/tvhome/QuickSettingsActivity.java
 --- a/launcher/app/src/main/java/com/gathin/tvhome/QuickSettingsActivity.java
 +++ b/launcher/app/src/main/java/com/gathin/tvhome/QuickSettingsActivity.java
-@@ -38,6 +38,9 @@
+@@ -38,4 +38,7 @@
          addRow(rows, R.drawable.ic_picture, R.string.quick_picture, 0, SystemSettings.intent(this, Settings.ACTION_DISPLAY_SETTINGS));
          addRow(rows, R.drawable.ic_wifi, R.string.quick_network, 0, SystemSettings.intent(this, Settings.ACTION_WIFI_SETTINGS));
 +        // CleanTV: common TV controls are one click away from the translucent Control Center.
