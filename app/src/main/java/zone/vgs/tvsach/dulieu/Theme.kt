@@ -38,22 +38,27 @@ val THEMES = listOf(
             "background_color" to "#000000",
             "cinematic_home" to true,
             "cinematic_dots" to false,
-            "cinematic_art" to 88,
-            "cinematic_scrim" to 48,
+            "cinematic_art" to 92,
+            "cinematic_scrim" to 58,
             "cinematic_white_focus" to true,
             "fade_rows" to true,
+            // tvOS-inspired glass focus: translucent surface, crisp rim and subtle sheen.
+            "glass_style" to "glass",
             // Consistent app tiles and a translucent, softly padded dock.
             "uniform_tiles" to true,
             "dock_row" to true,
             "dock_glass" to true,
             "dock_band" to true,
             "dock_even_padding" to true,
-            "dock_opacity" to 72,
-            // Smooth remote navigation: no overshoot, while keeping the launcher's animations enabled.
+            "dock_opacity" to 58,
+            // Smooth remote navigation and lifted focus without overshoot.
             "animations" to true,
             "advanced_effects" to true,
             "focus_overshoot" to false,
             "app_glow" to true,
+            "ambient_glow" to true,
+            // Open the launcher's glass quick-settings panel from the Settings action.
+            "settings_key_panel" to true,
             // Clean header and a compact app grid below the hero shelf.
             "show_greeting" to false,
             "header_white" to true,
