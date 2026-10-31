@@ -33,9 +33,32 @@ val THEMES = listOf(
     // Kiểu Apple TV (góp ý kimhuenguyen1964 24/10/2026, Alex 25/10): nửa trên phủ màu + ảnh của app đang chọn như top
     // shelf của tvOS, tên app lớn, dock kính mờ, ô icon đều, viền chọn trắng, không lời chào, các hàng mờ dần dưới đồng hồ.
     Theme("apple-tv", "Kiểu Apple TV", "Apple TV style", "Nền theo màu app đang chọn, dock kính mờ, ô icon đều", "Backdrop in the focused app's colour, frosted dock, even icon tiles",
-        mapOf("background_color" to "#000000", "cinematic_home" to true, "cinematic_dots" to false, "cinematic_art" to 70,
-            "cinematic_scrim" to 60, "cinematic_white_focus" to true, "uniform_tiles" to true, "dock_glass" to true,
-            "show_greeting" to false, "header_white" to true, "fade_rows" to true, "rows_below_dock" to 1, "columns" to 5,
+        mapOf(
+            // tvOS-style hero: artwork follows the focused app, with enough contrast for white labels.
+            "background_color" to "#000000",
+            "cinematic_home" to true,
+            "cinematic_dots" to false,
+            "cinematic_art" to 88,
+            "cinematic_scrim" to 48,
+            "cinematic_white_focus" to true,
+            "fade_rows" to true,
+            // Consistent app tiles and a translucent, softly padded dock.
+            "uniform_tiles" to true,
+            "dock_row" to true,
+            "dock_glass" to true,
+            "dock_band" to true,
+            "dock_even_padding" to true,
+            "dock_opacity" to 72,
+            // Smooth remote navigation: no overshoot, while keeping the launcher's animations enabled.
+            "animations" to true,
+            "advanced_effects" to true,
+            "focus_overshoot" to false,
+            "app_glow" to true,
+            // Clean header and a compact app grid below the hero shelf.
+            "show_greeting" to false,
+            "header_white" to true,
+            "rows_below_dock" to 1,
+            "columns" to 5,
             "rows_offset_dp" to 90),
         null, listOf(0xFF7A0A14, 0xFF0B3A6E, 0xFF050505)),
     // Kiểu macOS (Alex 27/10/2026): nền lượn tím–hồng kiểu Sequoia với logo VGS ở giữa (vẽ bằng code, logo/vgs-mono.png),
