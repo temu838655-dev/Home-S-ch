@@ -7146,10 +7146,9 @@ index 00000000..fcf5287b
 +}
 
 diff --git a/launcher/app/src/main/java/com/gathin/tvhome/QuickSettingsActivity.java b/launcher/app/src/main/java/com/gathin/tvhome/QuickSettingsActivity.java
-index 00000000..11111111 100644
 --- a/launcher/app/src/main/java/com/gathin/tvhome/QuickSettingsActivity.java
 +++ b/launcher/app/src/main/java/com/gathin/tvhome/QuickSettingsActivity.java
-@@ -39,6 +39,9 @@ public final class QuickSettingsActivity extends Activity {
+@@ -38,6 +38,9 @@
          addRow(rows, R.drawable.ic_picture, R.string.quick_picture, 0, SystemSettings.intent(this, Settings.ACTION_DISPLAY_SETTINGS));
          addRow(rows, R.drawable.ic_wifi, R.string.quick_network, 0, SystemSettings.intent(this, Settings.ACTION_WIFI_SETTINGS));
 +        // CleanTV: common TV controls are one click away from the translucent Control Center.
@@ -7159,7 +7158,6 @@ index 00000000..11111111 100644
                  SystemSettings.intent(this, Settings.ACTION_MANAGE_APPLICATIONS_SETTINGS));
 diff --git a/launcher/app/src/main/res/drawable/ic_volume.xml b/launcher/app/src/main/res/drawable/ic_volume.xml
 new file mode 100644
-index 00000000..22222222
 --- /dev/null
 +++ b/launcher/app/src/main/res/drawable/ic_volume.xml
 @@ -0,0 +1,10 @@
@@ -7174,7 +7172,6 @@ index 00000000..22222222
 +</vector>
 diff --git a/launcher/app/src/main/res/drawable/ic_bluetooth.xml b/launcher/app/src/main/res/drawable/ic_bluetooth.xml
 new file mode 100644
-index 00000000..33333333
 --- /dev/null
 +++ b/launcher/app/src/main/res/drawable/ic_bluetooth.xml
 @@ -0,0 +1,10 @@
@@ -7188,9 +7185,10 @@ index 00000000..33333333
 +        android:pathData="M17.71,7.71L12,2h-1v7.59L6.41,5 5,6.41 10.59,12 5,17.59 6.41,19 11,14.41V22h1l5.71,-5.71L13.41,12l4.3,-4.29zM13,5.83l1.88,1.88L13,9.59V5.83zM14.88,16.29L13,18.17v-3.76l1.88,1.88z" />
 +</vector>
 diff --git a/launcher/app/src/main/res/values/strings.xml b/launcher/app/src/main/res/values/strings.xml
-index 00000000..44444444 100644
 --- a/launcher/app/src/main/res/values/strings.xml
 +++ b/launcher/app/src/main/res/values/strings.xml
-@@ -1,3 +1,5 @@
+@@ -1,2 +1,4 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
 +    <string name="quick_sound">Âm thanh</string>
 +    <string name="quick_bluetooth">Bluetooth</string>
