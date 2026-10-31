@@ -59,6 +59,8 @@ val THEMES = listOf(
             "focus_overshoot" to false,
             "app_glow" to true,
             "ambient_glow" to true,
+            // Spread the selected app colour down from the hero shelf for a deeper, more cinematic focus.
+            "glow_style" to "horizon",
             // Open the launcher's glass quick-settings panel from the Settings action.
             "settings_key_panel" to true,
             // Clean header and a compact app grid below the hero shelf.
