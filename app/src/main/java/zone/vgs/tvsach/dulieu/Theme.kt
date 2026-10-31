@@ -47,6 +47,8 @@ val THEMES = listOf(
             // Consistent app tiles and a translucent, softly padded dock.
             "uniform_tiles" to true,
             "dock_row" to true,
+            // Show the focused app name prominently above the dock, as in the tvOS top shelf.
+            "dock_title" to true,
             "dock_glass" to true,
             "dock_band" to true,
             "dock_even_padding" to true,
