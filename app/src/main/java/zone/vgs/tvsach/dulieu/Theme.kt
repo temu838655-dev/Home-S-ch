@@ -52,7 +52,7 @@ val THEMES = listOf(
             "dock_glass" to true,
             "dock_band" to true,
             "dock_even_padding" to true,
-            "dock_opacity" to 48,
+            "dock_opacity" to 65,
             // Smooth remote navigation and lifted focus without overshoot.
             "animations" to true,
             "advanced_effects" to true,
@@ -66,7 +66,7 @@ val THEMES = listOf(
             // Clean header and a compact app grid below the hero shelf.
             "show_greeting" to false,
             "header_white" to true,
-            "rows_below_dock" to 2,
+            "rows_below_dock" to 1,
             "columns" to 6,
             "rows_offset_dp" to 76),
         null, listOf(0xFF7A0A14, 0xFF0B3A6E, 0xFF050505)),
