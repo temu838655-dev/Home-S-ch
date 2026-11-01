@@ -39,7 +39,7 @@ val THEMES = listOf(
             "cinematic_home" to true,
             "cinematic_dots" to true,
             "cinematic_art" to 100,
-            "cinematic_scrim" to 66,
+            "cinematic_scrim" to 72,
             "cinematic_white_focus" to true,
             "fade_rows" to true,
             // tvOS-inspired glass focus: translucent surface, crisp rim and subtle sheen.
@@ -57,7 +57,7 @@ val THEMES = listOf(
             "dock_glass" to true,
             "dock_band" to true,
             "dock_even_padding" to true,
-            "dock_opacity" to 55,
+            "dock_opacity" to 62,
             // Smooth remote navigation and lifted focus without overshoot.
             "animations" to true,
             "advanced_effects" to true,
