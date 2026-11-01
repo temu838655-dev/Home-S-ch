@@ -27,8 +27,11 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      # Do not ask setup-android to install the obsolete SDK package "tools".
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
 
       - name: Install launcher Android SDK packages
         run: sdkmanager "platforms;android-34" "build-tools;34.0.0" "platform-tools"
@@ -37,7 +40,6 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       # Rebuild the bundled TV launcher from its pinned patch before packaging the app.
-      # This keeps app/src/main/assets/tvhome*.apk in sync with the repository's launcher source.
       - name: Build bundled TV launcher and data
         run: |
           chmod +x scripts/dung-launcher.sh ./gradlew
