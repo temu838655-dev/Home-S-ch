@@ -66,6 +66,10 @@ val THEMES = listOf(
             // Clean header and a compact app grid below the hero shelf.
             "show_greeting" to false,
             "header_white" to true,
+            // Apple TV home keeps the top shelf uncluttered; inputs and network remain reachable from Settings.
+            "show_network_pill" to false,
+            "show_inputs_pill" to false,
+            "icon_only_buttons" to true,
             "rows_below_dock" to 1,
             "columns" to 6,
             "rows_offset_dp" to 64),
