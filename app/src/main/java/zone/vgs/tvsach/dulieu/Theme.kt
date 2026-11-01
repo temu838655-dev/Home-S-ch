@@ -38,8 +38,8 @@ val THEMES = listOf(
             "background_color" to "#000000",
             "cinematic_home" to true,
             "cinematic_dots" to false,
-            "cinematic_art" to 92,
-            "cinematic_scrim" to 58,
+            "cinematic_art" to 100,
+            "cinematic_scrim" to 64,
             "cinematic_white_focus" to true,
             "fade_rows" to true,
             // tvOS-inspired glass focus: translucent surface, crisp rim and subtle sheen.
@@ -52,7 +52,7 @@ val THEMES = listOf(
             "dock_glass" to true,
             "dock_band" to true,
             "dock_even_padding" to true,
-            "dock_opacity" to 58,
+            "dock_opacity" to 48,
             // Smooth remote navigation and lifted focus without overshoot.
             "animations" to true,
             "advanced_effects" to true,
@@ -66,9 +66,9 @@ val THEMES = listOf(
             // Clean header and a compact app grid below the hero shelf.
             "show_greeting" to false,
             "header_white" to true,
-            "rows_below_dock" to 1,
-            "columns" to 5,
-            "rows_offset_dp" to 90),
+            "rows_below_dock" to 2,
+            "columns" to 6,
+            "rows_offset_dp" to 76),
         null, listOf(0xFF7A0A14, 0xFF0B3A6E, 0xFF050505)),
     // Kiểu macOS (Alex 27/10/2026): nền lượn tím–hồng kiểu Sequoia với logo VGS ở giữa (vẽ bằng code, logo/vgs-mono.png),
     // thanh menu mờ trên cùng (top_bar_band), một hàng app kính mờ sát đáy như Dock, nút tròn nhỏ góc phải.
