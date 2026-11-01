@@ -37,7 +37,7 @@ val THEMES = listOf(
             // tvOS-style hero: artwork follows the focused app, with enough contrast for white labels.
             "background_color" to "#000000",
             "cinematic_home" to true,
-            "cinematic_dots" to false,
+            "cinematic_dots" to true,
             "cinematic_art" to 100,
             "cinematic_scrim" to 66,
             "cinematic_white_focus" to true,
@@ -46,6 +46,11 @@ val THEMES = listOf(
             "glass_style" to "glass",
             // Consistent app tiles and a translucent, softly padded dock.
             "uniform_tiles" to true,
+            // Giữ tên ứng dụng luôn hiển thị dưới tile, không bắt người dùng đoán biểu tượng.
+            "always_show_names" to true,
+            // Apple TV có nhiều hàng ứng dụng, không ép thành một Dock dài.
+            "single_row" to false,
+            "app_library" to false,
             "dock_row" to true,
             // Show the focused app name prominently above the dock, as in the tvOS top shelf.
             "dock_title" to true,
@@ -65,6 +70,7 @@ val THEMES = listOf(
             "settings_key_panel" to true,
             // Clean header and a compact app grid below the hero shelf.
             "show_greeting" to false,
+            "top_menu" to false,
             "header_white" to true,
             // Apple TV home keeps the top shelf uncluttered; inputs and network remain reachable from Settings.
             "show_network_pill" to false,
