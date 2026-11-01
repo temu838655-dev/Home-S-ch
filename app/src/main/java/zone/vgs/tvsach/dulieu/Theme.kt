@@ -79,7 +79,6 @@ val THEMES = listOf(
             "rows_below_dock" to 2,
             "columns" to 5,
             // Khoảng cách giữa shelf và lưới dưới: cân đối hơn trên TV 1080p/4K.
-            "rows_offset_dp" to 64,
             "rows_offset_dp" to 64),
         null, listOf(0xFF7A0A14, 0xFF0B3A6E, 0xFF050505)),
     // Kiểu macOS (Alex 27/10/2026): nền lượn tím–hồng kiểu Sequoia với logo VGS ở giữa (vẽ bằng code, logo/vgs-mono.png),
