@@ -2,13 +2,13 @@ name: Build Android APK
 
 on:
   push:
-    branches: [main]
+    branches: [main, redesign/apple-tv-home]
   workflow_dispatch:
 
 permissions:
   contents: read
 
-# Chỉ giữ một lượt build cho main; commit mới sẽ thay thế lượt build cũ.
+# Chỉ giữ một lượt build cho mỗi nhánh; commit mới thay thế lượt build cũ.
 concurrency:
   group: android-release-${{ github.ref }}
   cancel-in-progress: true
